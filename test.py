@@ -33,5 +33,9 @@ class TestFlightDataProcessor(unittest.TestCase):
         self.assertEqual(len(ontime_flights), 1)
         cancelled_flights = self.fm.flight_by_status("CANCELLED")
         self.assertEqual(len(cancelled_flights), 1)
+
+    def test_len(self):
+        self.assertEqual(len(self.fm), 3)
+        
 if __name__ == "__main__":
     unittest.main()
