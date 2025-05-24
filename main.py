@@ -26,7 +26,7 @@ class FlightDataProcessor():
                 maxflightindex = i.copy()
         return maxflightindex
         
-    def __sizeof__(self) -> int:
+    def __len__(self) -> int:
         return len(self.flights)
         pass
 
